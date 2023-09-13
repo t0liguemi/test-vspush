@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container w-auto my-5">
+    <div class="card">
+      <div class="card-header d-flex justify-content-start">
+        <h2 class="fw-semibold my-2">Payment from example</h1>
+      </div>
+      <div class="card-body">
+        <form class="m-3 d-grid gap-3">
+          <div class="alert alert-danger" role="alert">
+            Some fields are missing
+          </div>
+          <div class="row">
+            <div class="col-5">
+              <label for="cardNumber" class="form-label">Card #</label>
+              <input type="text" class="form-control" id="cardNumber" aria-describedby="cardHelp"
+                placeholder="XXXXXXXXXXXXXXXX">
+            </div>
+            <div class="col-3">
+              <label for="CVC" class="form-label">CVC #</label>
+              <input type="text" class="form-control" id="cvcNumber" aria-describedby="cardHelp" placeholder="XXXX">
+            </div>
+            <div class="col-4">
+              <label for="amount" class="form-label">Amount</label>
+              <div class="d-flex p-0 m-0"><span class="fw-bold">$</span><input type="text" class="form-control"
+                  id="amount" aria-describedby="cardHelp" placeholder="Amount">
+              </div>
+            </div>
+          </div>
+            <div class="row">
+              <div class="col">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName" aria-describedby="cardHelp">
+              </div>
+              <div class="col">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastName" aria-describedby="cardHelp">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <label for="city" class="form-label">City</label>
+                <input type="text" class="form-control" id="city" aria-describedby="cardHelp">
+              </div>
+              <div class="col-3">
+                <label for="pickState" class="form-label">State</label>
+                <select id="pickState" class="form-select" aria-label="stateSelect">
+                  <option selected>Pick a state</option>
+                  <option value="1">Liquid</option>
+                  <option value="2">Solid</option>
+                  <option value="3">Gas</option>
+                </select>
+              </div>
+              <div class="col-3">
+                <label for="postalCode" class="form-label">Postal Code</label>
+                <input type="text" class="form-control" id="postalCode" aria-describedby="cardHelp">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3">
+                <p class="mb-2">We accept:</p>
+                <div class="container bg-secondary text-light rounded py-2">
+                  <div class="form-check form-check-inline me-1 pe-2">
+                    <input class="form-check-input" type="radio" name="paymentMethod" id="inlineCheckbox1"
+                      value="option1" checked>
+                    <label class="form-check-label" for="inlineCheckbox1"><i
+                        class="fa-brands fa-cc-mastercard"></i></label>
+                  </div>
+                  <div class="form-check form-check-inline me-1 pe-2">
+                    <input class="form-check-input" type="radio" name="paymentMethod" id="inlineCheckbox2"
+                      value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2"><i class="fa-brands fa-cc-visa"></i></label>
+                  </div>
+                  <div class="form-check form-check-inline me-1 pe-2">
+                    <input class="form-check-input" type="radio" name="paymentMethod" id="inlineCheckbox3"
+                      value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3"><i
+                        class="fa-brands fa-cc-diners-club"></i></label>
+                  </div>
+                  <div class="form-check form-check-inline me-1 pe-2">
+                    <input class="form-check-input" type="radio" name="paymentMethod" id="inlineCheckbox4"
+                      value="option4">
+                    <label class="form-check-label" for="inlineCheckbox4"><i class="fa-brands fa-cc-amex"></i></label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+              </div>
+              <div class="col-6">
+                <div class="form-floating">
+                  <p class="mb-2">Message</p>
+                  <textarea class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>
+                  <h6 class="text-secondary mt-0 pt-0">Add any notes here.</h6>
+
+                </div>
+              </div>
+            </div>
+        </form>
+      </div>
+      <div class="card-footer text-body-secondary d-flex justify-content-end gap-1 py-3">
+        <button type="button" class="btn btn-secondary fs-5 fw-semibold">Cancel</button>
+        <button type="button" class="btn btn-primary fs-5 fw-semibold">Send</button>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/bd4304d27d.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
